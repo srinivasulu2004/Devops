@@ -23,7 +23,7 @@ pipeline{
     stage('Build Artifact'){
       steps{
         sh '''
-        zip -r ${BUILD-ARTIFACT} .\
+        zip -r ${BUILD_ARTIFACT} .\
         +x "node_modules/*" \
         +x ".git/*"
         '''
