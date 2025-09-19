@@ -29,12 +29,12 @@ pipeline{
         '''
       }
     }
-  }
     stage('Archive Artifact'){
       steps{
         archiveArtifacts artifacts: "${BUILD-ARTIFACT}", fingerprint: true
       }
     }
+  }
     post{
       success{
         echo 'Build is success for ${APP-NAME}'
