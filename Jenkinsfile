@@ -1,7 +1,7 @@
 pipeline{
   agent { label 'job' }
   environment{
-    APP_NAME= "my-node-app'
+    APP_NAME= "my-node-app"
     BUILD_ARTIFACT= "build.zip"
   }
   stages{
