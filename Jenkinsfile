@@ -24,8 +24,8 @@ pipeline{
       steps{
         sh '''
         zip -r ${BUILD_ARTIFACT} .\
-        +x "node_modules/*" \
-        +x ".git/*"
+        -x "node_modules/*" \
+        -x ".git/*"
         '''
       }
     }
