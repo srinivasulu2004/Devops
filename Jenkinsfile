@@ -31,7 +31,7 @@ pipeline{
     }
     stage('Archive Artifact'){
       steps{
-        archiveArtifacts artifacts: "${BUILD-ARTIFACT}", fingerprint: true
+        archiveArtifacts artifacts: "${BUILD_ARTIFACT}", fingerprint: true
       }
     }
   }
