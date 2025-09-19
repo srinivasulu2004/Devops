@@ -29,6 +29,7 @@ pipeline{
         '''
       }
     }
+  }
     stage('Archive Artifact'){
       steps{
         archiveArtifacts artifacts: "${BUILD-ARTIFACT}", fingerprint: true
@@ -42,5 +43,4 @@ pipeline{
         echo 'Build is failed for ${APP-NAME}'
       }
     }
-  }
 }
